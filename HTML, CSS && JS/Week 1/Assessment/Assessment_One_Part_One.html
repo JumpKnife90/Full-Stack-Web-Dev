@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<!-- Below is the metadata area -->
+	<meta charset="UTF-8">
+	<meta name="author" content="Yuguan Li">	
+
+	<!-- Below is the style area -->
+	<!-- No style should be added for part one -->
+
+	<!-- Below is the title area -->
+	<title>Assessment One Part One</title>
+</head>
+<body>
+	<h2>Please Enter Your Details For Our Dating Website!</h2>
+
+	<form action="https://ihome.ust.hk/~rossiter/cgi-bin/show_everything.php" method="post" enctype="multipart/form-data">
+		<fieldset>
+			<legend>Your Face</legend>
+
+			<label for="avatar">Your Image:</label>
+			<input type="file" id="avatar" name="avatar" required>
+			<br>
+
+			<label for="imgPreview">Image Preview:</label>
+			<img id="preview" name="imgPreview">
+			<br>
+		</fieldset>
+
+		<fieldset>
+			<legend>Your General Details</legend>
+			
+			<label for="name">Name:</label>
+			<input type="text" id="name" name="name" placeholder="Joe Doe" required>
+			<br>
+
+			<label for="gender">Gender:</label>
+			<input type="radio" id="maleGender" name="gender" value="Male" required><label>Male</label>
+			<input type="radio" id="femaleGender" name="gender" value="Female"><label>Female</label>
+			<br>
+
+			<label for="age">Age:</label>
+			<input type="number" id="age" name="age" required>
+			<br>
+
+			<label for="dob">Date of birth:</label>	
+			<input type="date" id="dob" name="dob">
+			<br>
+
+			<label for="color">Favorite color:</label>	
+			<input type="color" id="color" name="color">
+			<br>
+
+			<label for="country">Which country:</label>	
+			<select id="country" name="country">
+				<option disabled selected><label> -- Select an option -- </label></option>
+				<option value="United States"><label>United States</label></option>
+				<option value="China"><label>China</label></option>
+				<option value="India"><label>India</label></option>
+				<option value="Italy"><label>Italy</label></option>
+				<option value="German"><label>German</label></option>
+				<option value="None"><label>None</label></option>
+			</select>
+			<br>
+		</fieldset>
+
+		<fieldset>
+			<legend>Your Indicators</legend>
+
+			<label for="height">Height:</label>	
+			Short <input type="range" min="0" max="100" id="height" name="height"> Tall
+			<br>
+
+			<label for="salary">Salary:</label>	
+			Poor <input type="range" min="0" max="100" id="salary" name="salary"> Rich
+			<br>
+		</fieldset>
+
+		<fieldset>
+			<legend>Your Contact Information</legend>
+
+			<label for="email">Email:</label>	
+			<input type="email" id="email" name="email" required>
+			<br>
+
+			<label for="mobile">Mobile:</label>	
+			<input type="tel" id="mobile" name="mobile">
+			<br>
+
+			<label for="addr">Address:</label>	
+			<textarea id="addr" name="addr"></textarea>
+			<br>
+
+			<label for="contactOption">Method to contact you:</label>	
+			<input type="checkbox" id="contactOption1" name="contactOption" value="Email"><label>Email</label>
+			<input type="checkbox" id="contactOption2" name="contactOption" value="Whatsapp"><label>Whatsapp</label>
+			<input type="checkbox" id="contactOption3" name="contactOption" value="In-app chat"><label>In-app chat</label>
+			<br>
+		</fieldset>
+
+		<input type="submit" name="submitForm" value="Submit!">
+
+	</form>
+</body>
+</html>
